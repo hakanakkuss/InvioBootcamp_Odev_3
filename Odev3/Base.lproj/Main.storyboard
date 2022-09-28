@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BhG-0A-qmI">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Odev3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Binance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQH-ii-IFw">
+                                <rect key="frame" x="93" y="328" width="228.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-1j-UFS">
+                                <rect key="frame" x="16" y="375.5" width="382" height="21.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Join the world's largest crypto exchange">
+                                        <attributes>
+                                            <color key="NSColor" name="YaziRenk2"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="eMB-zL-X3v">
+                                <rect key="frame" x="20" y="441.5" width="374" height="199.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199.5" id="g7e-ut-DJE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pY3-di-nzY">
+                                <rect key="frame" x="20" y="751" width="374" height="78"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfl-BS-Bk3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="31"/>
+                                        <color key="backgroundColor" red="1" green="0.79719661419999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Verify Now"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="16"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOV-8s-vDc">
+                                        <rect key="frame" x="0.0" y="47" width="374" height="31"/>
+                                        <color key="tintColor" red="1" green="0.79719661419999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Skip"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UOV-8s-vDc" firstAttribute="centerX" secondItem="pY3-di-nzY" secondAttribute="centerX" id="A9t-ZZ-cLg"/>
+                                    <constraint firstItem="UOV-8s-vDc" firstAttribute="top" secondItem="mfl-BS-Bk3" secondAttribute="bottom" constant="30" id="GbD-xI-aq2"/>
+                                    <constraint firstItem="mfl-BS-Bk3" firstAttribute="centerX" secondItem="pY3-di-nzY" secondAttribute="centerX" id="jTx-35-dqa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aQH-ii-IFw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ka-ql-eD6"/>
+                            <constraint firstItem="pY3-di-nzY" firstAttribute="top" secondItem="eMB-zL-X3v" secondAttribute="bottom" constant="110" id="2VO-XJ-Wd2"/>
+                            <constraint firstItem="aQH-ii-IFw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="2wG-6s-lUr"/>
+                            <constraint firstAttribute="trailing" secondItem="s6A-1j-UFS" secondAttribute="trailing" constant="16" id="7zd-nA-iIx"/>
+                            <constraint firstItem="s6A-1j-UFS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="MaV-Sb-Yvf"/>
+                            <constraint firstItem="eMB-zL-X3v" firstAttribute="top" secondItem="s6A-1j-UFS" secondAttribute="bottom" constant="44.5" id="Ugy-hh-OFh"/>
+                            <constraint firstItem="pY3-di-nzY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Uph-dv-l4z"/>
+                            <constraint firstItem="s6A-1j-UFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XbK-qW-cQB"/>
+                            <constraint firstItem="eMB-zL-X3v" firstAttribute="centerX" secondItem="s6A-1j-UFS" secondAttribute="centerX" id="bs2-Gc-2Yh"/>
+                            <constraint firstItem="s6A-1j-UFS" firstAttribute="top" secondItem="aQH-ii-IFw" secondAttribute="bottom" constant="16" id="cwU-D4-saz"/>
+                            <constraint firstItem="eMB-zL-X3v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jFY-YV-xqx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pY3-di-nzY" secondAttribute="trailing" constant="20" id="qRk-m3-tKG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hte-hD-bRT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="70.982142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="11H-8l-iJc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BhG-0A-qmI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mle-Bk-jUm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RTH-fk-udw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ih4-YF-dCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="626" height="347"/>
+        <namedColor name="YaziRenk2">
+            <color red="0.50737276944247167" green="0.50737276944247167" blue="0.50737276944247167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
